@@ -1,0 +1,9 @@
+version: '2'
+services: 
+  metrica:
+    build: ./App
+    container_name: metricav2
+    ports: 
+      - "5000:5000"
+    pid: "host"
+    restart: always  
